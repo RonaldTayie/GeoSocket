@@ -22,7 +22,7 @@ SERVER_URL = os.getenv('SERVER_URL')
 def connect():
     print('Connection established')
     # Start sending data after connection is established
-    threading.Thread(target=send_data).start()
+    # threading.Thread(target=send_data).start()
     threading.Thread(target=send_first).start()
 
 @sio.event
