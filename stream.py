@@ -46,6 +46,7 @@ def send_first():
                     "sat":3
                 }
             }
+            print(log)
             sio.emit('message', item)
             time.sleep(2)
         print('Finished sending data')
@@ -69,6 +70,7 @@ def send_data():
                     "sat":3
                 }
             }
+            print(log)
             sio.emit('message', item)
             time.sleep(1)
         print('Finished sending data')
